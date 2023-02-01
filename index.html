@@ -4,15 +4,169 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./mai.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/light.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
   <title>Document</title>
 </head>
 
 <body>
-  
-    
+  <div id="progressBar"></div>
+  <div id="scrollPath"></div>
+  <div class="switch">
+    <div class="btn" id="color"></div>
+  </div>
+  <div class="wrapper none">
+    <header>
+      <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1ZKDO09SFnjRK0vL6y15bOE5bGuTeNC1-" class="logo">
+      
+        CV</a>
+      <figure id="moon">
+        <div class="light-row">
+          <div class="wire"></div>
+          <div class="light">
+            <div class="bulb">
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+        </div>
+      </figure>
+      
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <img src="./img/stars.png" alt="#" id="stars">
+        <img src="./img/mountains_behind.png" alt="#" id="mountains_behind">
+        <h2 id="text">Hello world</h2>
+        <img src="./img/mountains_front.png" alt="#" id="mountains_front">
+      </section>
+
+
+      <div class="about" id="about">
+        <div class="wavy">
+          <span style="--i:1;">A</span>
+          <span style="--i:2;">b</span>
+          <span style="--i:3;">o</span>
+          <span style="--i:4;">u</span>
+          <span style="--i:5;">t </span>
+          <span style="--i:6;"> </span>
+          <span style="--i:7;"> M</span>
+          <span style="--i:8;">e</span>
+
+        </div>
+        <div class="card-row">
+            <img src="./img/OutPhotoMy.jpg" alt="#">
+       
+        <div class="card-info"><p>
+          Every time I approach something new, I am struck by the fact that even more work is behind it. I like it. I would like to make a product that could be useful to people. Isn't that what we live for?
+        </p></div>
+       
+      </div>
+        <div class="work-row" id="work">
+          <div class="wavy">
+            <span style="--i:1;">W</span>
+            <span style="--i:2;">o</span>
+            <span style="--i:3;">r</span>
+            <span style="--i:4;">k</span>
+          </div>
+          
+          <div class="work-row-slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+               
+                <div class="swiper-slide">
+                  <span>React</span>
+                  <img src="./img/star.png" alt="#"></div>
+                
+                <div class="swiper-slide ">
+                  <span>React</span>
+                  <img src="./img/wEATHER2.png" alt="#"></div>
+                
+                <div class="swiper-slide">
+                  <span>React</span>
+                  <img src="./img/Screenshot 2023-01-30 141003.png" alt="#"></div>
+                
+                <div class="swiper-slide">
+                  <span>Javascript</span>
+                  <img src="./img/todoList.png" alt="#"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="skills-row">
+            <div class="wavy">
+              <span style="--i:1;">s</span>
+              <span style="--i:2;">k</span>
+              <span style="--i:3;">i</span>
+              <span style="--i:4;">l</span>
+              <span style="--i:5;">l</span>
+              <span style="--i:6;">s</span>
+            </div>
+
+            <div class="skills-container">
+                <h2 class="object" data-value="-2">Skills Space</h2>
+                <div class="skills-container-img">
+              <img src="./img/js.png"  class='size js object' data-value="-3" alt="#">
+              <img src="./img/bootstrap.png" class='size fg object' data-value="-2" alt="#">
+              <img src="./img/figma.png" class='size ru object' data-value="-5" alt="#">
+              <img src="./img/html.png" class='size rc object' data-value="-7" alt="#">
+              <img src="./img/css.png" class='size html object' data-value="4" alt="#">
+              <img src="./img/react.png" class='size ss object'data-value="-2" alt="#">
+              <img src="./img/redux.png" class='size css object' data-value="-4" alt="#">
+              <img src="./img/sass.png" class='size bt object' data-value="-1" alt="#">
+              <img src="./img/git.png" class='size git object' data-value="-2" alt="#">
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+    </main>
+
+
+
+ 
+  <footer id="footer">
+    <div class="footer-row">
+      <ul>
+       <li><a href=""><img src="/img/face).png" class='fotImg' alt=""></a></li>
+       <li><a href=""><img src="/img/gitgub.png"  class='fotImg' alt=""></a></li>
+       <li><a href=""><img src="/img/in.png" class='fotImg' alt=""></a></li>
+       <li><a href=""><img src="/img/insta.png" class='fotImg' alt=""></a></li>
+       <li><a href=""><img src="/img/tg).png" class='fotImg' alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./JS/parallax.js"></script>
+  <audio src="./Sourse/audio/click.mp3" id="audio" autostart="false"></audio>
+  <script src="./JS/light.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
+
+<!--     
     <figure>
       <div class="light-row">
         <div class="wire"></div>
@@ -26,12 +180,4 @@
           </div>
         </div>
       </div>
-    </figure>
-    
-  
-  
-  <audio src="./Sourse/audio/click.mp3" id="audio" autostart="false"></audio>
-  <script src="./JS/light.js"></script>
-</body>
-
-</html>
+    </figure> -->

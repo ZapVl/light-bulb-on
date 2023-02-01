@@ -1,18 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+:root {
+    --main-bg-color: rgb(43, 40, 40);
+  }
 
-body {
-
-    background: rgb(33, 32, 32);
-    ;
+.none{
+    display: none;
+    
 }
-
-body .on {
-    background: radial-gradient(#555, #111);
+main {
+    animation: 1s show ease;
+    -webkit-animation: 2s show ease;
 }
+  
+  @keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
 
 body.on .bulb {
     background: #fff;
@@ -23,6 +27,24 @@ body.on .bulb {
         0 0 250px #fff,
         0 0 350px #fff;
 }
+/* linear-gradient(#2b1055,#7597be) */
+body{
+    transition: all .3.5s ease;
+    background:  var(--main-bg-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-transition: all .3.5s ease;
+    -moz-transition: all .3.5s ease;
+    -ms-transition: all .3.5s ease;
+    -o-transition: all .3.5s ease;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
 
 body.on .bulb::before {
     background: #fff;
@@ -49,10 +71,8 @@ body.on .bulb::after {
 }
 
 .light-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
+   position: absolute;
+   top: 200px;
 }
 
 .light {}
@@ -62,7 +82,7 @@ body.on .bulb::after {
     position: relative;
     width: 80px;
     height: 80px;
-    background-color: #444;
+    background-color: rgb(48, 46, 46);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -77,7 +97,7 @@ body.on .bulb::after {
     position: absolute;
     width: 30px;
     height: 80px;
-    background-color: #444;
+    background-color: rgb(48, 46, 46);
     left: 22.5px;
     top: -50px;
     border-top: 30px solid black;
@@ -99,7 +119,7 @@ body.on .bulb::after {
     height: 30px;
     background: transparent;
     border-bottom-right-radius: 40px;
-    box-shadow: 20px 20px 0 10px #444;
+    box-shadow: 20px 20px 0 10px rgb(48, 46, 46);
 
 }
 
@@ -121,7 +141,7 @@ body.on .bulb span:nth-child(2) {
     height: 30px;
     background: transparent;
     border-bottom-left-radius: 40px;
-    box-shadow: -20px 20px 0 10px #444;
+    box-shadow: -20px 20px 0 10px rgb(48, 46, 46);
 
 
 }
@@ -129,7 +149,7 @@ body.on .bulb span:nth-child(2) {
 .wire {
     position: absolute;
     width: 4px;
-    height: 60vh;
+    height: 100vh;
     background: #000;
     left: calc(50% - 2px);
     bottom: 82%;
@@ -137,9 +157,10 @@ body.on .bulb span:nth-child(2) {
 }
 
 .switch {
+    z-index: 1000000;
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    top: 200px;
+    right: 200px;
     width: 80px;
     height: 80px;
     border: solid 3px black;
@@ -192,3 +213,4 @@ body.on .bulb span:nth-child(2) {
 #audio {
     display: none;
 }
+
